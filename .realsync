@@ -1,0 +1,42 @@
+##b RealSync configuration file.
+##
+
+# Local directory to be realtime-replicated.
+local = ~/Desktop/dev
+
+# User to connect to the remote host.
+user = www-data
+
+# Directory at the remote host to replicate files to.
+remote = /lixil/web-apps
+
+# Pathname wildcards to be excluded from the replication.
+# Use "*" for any filename character and "**" for any character,
+# including "/" in pathnames.
+exclude = ~
+exclude = .tmp
+exclude = .pyc
+exclude = .swp
+exclude = .git
+exclude = CVS
+exclude = .svn
+exclude = .realsync
+exclude = .cache
+exclude = .idea
+exclude = nbproject
+exclude = **/public/@*
+exclude = **/public/assets*
+exclude = **/public/files**
+exclude = **/public/frontend*
+exclude = */tmp
+exclude = **/node_modules** 
+exclude = */log
+exclude = .DS_Store
+
+# To turn off "synchronization ding" sound, set the following to 1.
+nosound = 0
+
+# If you need to load some other config file from here, uncomment
+# and correct the following directive:
+#load = some_file.ini
+
